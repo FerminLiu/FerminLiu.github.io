@@ -5,7 +5,7 @@ author_profile: true
 
 ---
 
-![](/images/scene.jpeg)
+<img src="/images/scene.jpg" alt="" style="width:30%;"/>
 
 I am currently a Ph.D. student in Mathematics at the Hong Kong University of Science and Technology (HKUST) under the guidance of Prof. Can YANG. My research interests include data science, statistical machine learning, and statistical genetics and genomics.
 
