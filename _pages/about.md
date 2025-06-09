@@ -4,7 +4,7 @@ title: ""
 author_profile: true
 
 ---
-<img src="/images/scene.jpeg" alt="" style="width:70%;"/>
+<img src="/images/scene.jpeg" alt="" style="width:85%;"/>
 
 # About Me
 
