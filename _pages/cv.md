@@ -18,8 +18,8 @@ Work experience
 ======
 * Summer, 2024: Research Intern
   * The Hong Kong University of Science and Technology
-  * Duties includes: Finishing reseach projects about Statistical Machine Learning and Statistical Genetics and Genomics
-  * Supervisor: Prof.Can YANG
+  * Duties include: contributing to projects involving statistical machine learning and statistical genetics and genomics
+  * Supervisor: Prof. Can YANG
 
 
   
