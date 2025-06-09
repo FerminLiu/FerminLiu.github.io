@@ -22,7 +22,7 @@ repository               : "FerminLiu/FerminLiu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "images/profile.jpg"
   name             : "Fengming LIU"
   pronouns         : "he/his"# example: "she/her"  
   bio              : "PhD student at HKUST"
