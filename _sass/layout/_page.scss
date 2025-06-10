@@ -32,6 +32,8 @@
       @include full();
     }
   }
+  max-width: 1200px !important;  // 想要的宽度自己填
+  margin: 0 auto;
 }
 
 .page__title {
