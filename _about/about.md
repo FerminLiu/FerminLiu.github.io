@@ -34,8 +34,8 @@ Research experience
 Contact
 ======
 ----
-* mail : liufengming25@gmail.com
-* office : Room XXXX, Academic Building\
+* Email : liufengming25@gmail.com
+* Office : Room XXXX, Academic Building\
 The Hong Kong University of Science and Technology\
 Clear Water Bay, Kowloon\
 Hong Kong
