@@ -23,7 +23,7 @@ Education
 * Ph.D in Mathematics, The Hong Kong University of Science and Technology, 2025 - present
 * B.S. in Statistics,  University of Science and Technology of China, 2021 - 2025
 
-Research experience
+Research Experience
 ======
 ----
 * Summer, 2024: Research Intern
