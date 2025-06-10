@@ -35,7 +35,7 @@ cv:
 ## 修改2 
 修改了页面的左右边距
 
-找到 _sass ->layout->_page.scss 中的.page代码块，将prefix( 0.5 of 12)，suffix( 2 of 12)分别改成prefix( 1 of 12)，suffix( 0.5 of 12)，，代码意思是：整个页面分成12个bar, 内容部分占据10个bar,然后在这10个bar中，左间距占 1 个bar, 右间距占0.5个bar
+找到 _sass ->layout->_page.scss 中的.page代码块，将prefix( 0.5 of 12)，suffix( 2 of 12)分别改成prefix( 1 of 12)，suffix( 0.5 of 12)，，代码意思是：整个页面分成12个bar, 内容部分占据10个bar,然后在这10个bar中，左边距占 1 个bar, 右边距占 0.2个bar
 
 更新结果如下：
 <pre>
@@ -43,7 +43,7 @@ cv:
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(1 of 12);
-    @include suffix(0.5 of 12);
+    @include suffix(0.2 of 12 );
   }
 </pre>
 
