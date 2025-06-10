@@ -33,15 +33,17 @@ cv:
 所以可见cv其实不需要这种操作，与 about.md 放在_pages 文件夹即可，但我还是为它单独搞了一个文件夹 _cv，不过我没有将 cv 各部分划分成若干子页面，而是把一个完整cv页面文件cv.md 放在了_cv 文件夹里。所以为了能让系统从文件夹 _cv 中读取 cv.md 文件从而正常显示cv页面，我们只需在_config.yml中collections中添加cv部分的参数即可。（所以如果下次想复原，只需把cv文件放入_pages文件夹，然后删掉_config.yml中collections模块的cv部分代码）
 
 ## 修改2 
-缩小了页面的右边距，即向右扩大了page内容区域的宽度
+修改了页面的左右边距
 
-找到 _sass ->layout->_page.scss 中的.page代码块，将 suffix( 2 of 12) 改成 suffix( 1 of 12)，更新如下
+找到 _sass ->layout->_page.scss 中的.page代码块，将prefix( 0.5 of 12)，suffix( 2 of 12)分别改成prefix( 1 of 12)，suffix( 0.5 of 12)，，代码意思是：整个页面分成12个bar, 内容部分占据10个bar,然后在这10个bar中，左间距占 1 个bar, 右间距占0.5个bar
+
+更新结果如下：
 <pre>
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(1 of 12);
+    @include prefix(1 of 12);
+    @include suffix(0.5 of 12);
   }
 </pre>
 
