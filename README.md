@@ -14,13 +14,17 @@
 collections:
 
 teaching:
+
     output: true
+    
     permalink: /:collection/:path/
     
 ···
 
 cv:
+
     output: true
+    
     permalink: /:collection/:path/
     
 从而使得这些collection的页面能够拥有子页面，同时使得系统能够从他们独立的文件夹读取页面文件(否则无法读取）。此外，还需要在每个子页面文件内部确定collection参数（即collection:teaching,talk等），然后通过设置子页面文件的permalink参数,我们就可以通过url直接访问该子页面，比如 permalink: /publications/2009-10-01-paper-title-number-1，我们可以通过ferminliu.github.io/publications/2009-10-01-paper-title-number-1直接访问publications页面的该子页面.
