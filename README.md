@@ -35,7 +35,7 @@ cv:
 ## 修改2 
 缩小了页面的右边距，即向右扩大了page内容区域的宽度
 
-找到 _sass ->layout->_page.scss 中的.page代码块，将suffix( 2 of 12) 改成 suffix( 1 of 12)，更新如下
+找到 _sass ->layout->_page.scss 中的.page代码块，将 suffix( 2 of 12) 改成 suffix( 1 of 12)，更新如下
 <pre>
 .page {
   @include breakpoint($large) {
