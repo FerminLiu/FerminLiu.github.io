@@ -3,6 +3,27 @@
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
+# 个人修改说明
+1. cv相关的文件被我从_pages取出并放入到一个单独的_cv文件夹中，这是为了与teaching，talks，publications等页面保持一致（实际没必要，强迫症)。
+
+解释一下，之所以各页面的文件被安放至其所属collection的独立文件夹中(即_teaching，_talk，_publication等)，是因为这些collection的页面需要设置子页面。我们需要使用_config.yml中collections模块的代码：
+
+collections:
+
+teaching:
+    output: true
+    permalink: /:collection/:path/
+    
+···
+
+cv:
+    output: true
+    permalink: /:collection/:path/
+    
+从而使得这些collection的页面能够拥有子页面，或者说使得系统能够从他们独立的文件夹读取页面文件。此外，还需要在子页面文件内部确定collection参数（即collection:teaching,talk等），然后通过设置子页面文件的permalink参数,我们就可以通过url直接访问该子页面，比如 permalink: /publications/2009-10-01-paper-title-number-1，我们可以通过ferminliu.github.io/publications/2009-10-01-paper-title-number-1直接访问publications页面的该子页面.
+
+所以可见cv其实不需要这种操作，与about.md放在_pages文件夹即可，但我还是为它单独搞了一个文件夹_cv，不过我没有将cv的各部分划分成若干子页面，而是把一个完整cv页面文件放在了_cv文件夹里，因此只需要在
+_config.yml中collections中添加cv部分的参数，就可以使得系统从_cv文件夹读取cv.md文件，从而正常显示cv页面（不这样cv无法显示）。
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
