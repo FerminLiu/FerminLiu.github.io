@@ -4,26 +4,33 @@
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
 # 个人修改说明
-1. cv相关的文件被我从_pages取出并放入到一个单独的_cv文件夹中，这是为了与teaching，talks，publications等页面保持一致（实际没必要，强迫症)。
+## 修改 1
+ cv相关的文件被我从_pages取出并放入到一个单独的_cv文件夹中，这是为了与其他的 collections of pages : teaching, talks, publications, post, portfolio 页面保持一致（实际没必要，强迫症)。
 
-解释一下，之所以各页面的文件被安放至其所属collection的独立文件夹中(即_teaching，_talk，_publication等)，是因为这些collection的页面需要设置子页面。我们需要使用_config.yml中collections模块的代码：
+解释一下，之所以各页面的文件被安放至其所属collection的独立文件夹中(即_teaching，_talks，_publications等)，是因为需要在这些collection的页面里再细分子页面。
 
+我们需要设置 _config.yml 中 collections 模块的代码：
+
+<pre>
 collections:
 
 teaching:
+
     output: true
+    
     permalink: /:collection/:path/
     
 ···
 
 cv:
-    output: true
-    permalink: /:collection/:path/
-    
-从而使得这些collection的页面能够拥有子页面，或者说使得系统能够从他们独立的文件夹读取页面文件。此外，还需要在子页面文件内部确定collection参数（即collection:teaching,talk等），然后通过设置子页面文件的permalink参数,我们就可以通过url直接访问该子页面，比如 permalink: /publications/2009-10-01-paper-title-number-1，我们可以通过ferminliu.github.io/publications/2009-10-01-paper-title-number-1直接访问publications页面的该子页面.
 
-所以可见cv其实不需要这种操作，与about.md放在_pages文件夹即可，但我还是为它单独搞了一个文件夹_cv，不过我没有将cv的各部分划分成若干子页面，而是把一个完整cv页面文件放在了_cv文件夹里，因此只需要在
-_config.yml中collections中添加cv部分的参数，就可以使得系统从_cv文件夹读取cv.md文件，从而正常显示cv页面（不这样cv无法显示）。
+    output: true
+    
+    permalink: /:collection/:path/
+</pre> 
+从而使得这些collection的页面能够拥有子页面，同时使得系统能够从他们独立的文件夹读取页面文件(系统会寻找形如_collection的文件夹）。此外，还需要在每个子页面文件内部确定collection参数（即collection:teaching,talk等），然后通过设置子页面文件的permalink参数,我们就可以通过url直接访问该子页面，比如 permalink: /publications/2009-10-01-paper-title-number-1，我们可以通过ferminliu.github.io/publications/2009-10-01-paper-title-number-1直接访问publications页面的该子页面.
+
+所以可见cv其实不需要这种操作，与 about.md 放在_pages 文件夹即可，但我还是为它单独搞了一个文件夹 _cv，不过我没有将 cv 各部分划分成若干子页面，而是把一个完整cv页面文件cv.md 放在了_cv 文件夹里。所以为了能让系统从文件夹 _cv 中读取 cv.md 文件从而正常显示cv页面，我们只需在_config.yml中collections中添加cv部分的参数即可。（所以如果下次想复原，只需把cv文件放入_pages文件夹，然后删掉_config.yml中collections中的cv部分代码）
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
