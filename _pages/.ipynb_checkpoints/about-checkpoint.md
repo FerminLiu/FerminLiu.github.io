@@ -34,7 +34,7 @@ Research Experience
 Contact
 ======
 ----
-* Email : liufengming25@gmail.com
+* Email : fliuav@connect.ust.hk
 * Office : Room 4382, Academic Building\
 The Hong Kong University of Science and Technology\
 Clear Water Bay, Kowloon\
