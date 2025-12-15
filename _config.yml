@@ -202,7 +202,7 @@ incremental: false
 
 
 # Markdown Processing
-kramdown:
+markdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
