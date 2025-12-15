@@ -47,6 +47,9 @@ cv:
   }
 </pre>
 
+## 修改3
+
+可在 _data/navigation.yml 里选择被展示的模块(CV,talk,teaching 等等)，我目前把他们全部注释掉了，只展示主页面about.
 
 
 # Getting Started
