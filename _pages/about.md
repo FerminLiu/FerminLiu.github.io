@@ -12,7 +12,7 @@ I am currently a Ph.D. student in Mathematics at the Hong Kong University of Sci
 
 My research interets include statistical machine learning and statistical genetics and genomics.
 
-In my free time, I enjoy hiking, playing ping-pong (skillful), running, fitness and listening to music (I am a big fan of Elvis Presley, Queen, the Beatles, Tatsuro Yamashita, and classical music🤩)
+In my free time, I enjoy hiking, playing ping-pong (skillful), running, fitness and listening to music (I am a big fan of Elvis Presley, the Beatles, Queen, Tatsuro Yamashita, Prince, and classical music🤩)
 
 This website serves as my academic homepage, where I share my publications, research updates, teaching materials, and other professional activities.
 
